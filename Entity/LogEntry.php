@@ -19,7 +19,7 @@ use Doctrine\ORM\Mapping as ORM;
  *  }
  * )
  * @ORM\Entity(repositoryClass="ActivityLogBundle\Repository\LogEntryRepository")
- * @ORM\EntityListeners({"LogEntryListener"})
+ * @ORM\HasLifecycleCallbacks()
  */
 class LogEntry extends AbstractLogEntry
 {
